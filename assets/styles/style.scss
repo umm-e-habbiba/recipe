@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: OutfitVariable;
+  src: url(../fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: YoungSerif;
+  src: url(../fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+body {
+  background: #f3e5d8;
+  font-family: OutfitVariable;
+  color: hsl(30, 10%, 34%);
+}
+.main-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 80px auto;
+  width: 50%;
+  .main-text {
+    padding: 0px;
+  }
+  .omelette {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .main-heading {
+    font-family: YoungSerif;
+    margin: 20px 0px 10px 0px;
+    color: #000;
+  }
+  .sub-heading {
+    font-family: YoungSerif;
+    margin: 10px 0px;
+    color: hsl(14, 45%, 36%);
+    // color: #a8918c;
+  }
+  .prepration-box {
+    padding: 30px;
+    background: #fff8fc;
+    border-radius: 10px;
+    h3 {
+      margin: 10px 0px;
+      color: hsl(332, 51%, 32%);
+    }
+    ul {
+      line-height: 2;
+      margin-left: 20px;
+    }
+  }
+  .ingredients,
+  .instructions {
+    line-height: 2;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    tr {
+      border-bottom: 1px solid hsl(30, 10%, 34%);
+      td {
+        padding: 10px 0px;
+      }
+      .values {
+        color: hsl(14, 45%, 36%);
+        font-weight: 600;
+        text-align: left;
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  .main-box {
+    background: #fff;
+    padding: 0px;
+    border-radius: 0px;
+    margin: 0;
+    width: 100%;
+    .main-text {
+      padding: 0 30px 30px 30px;
+    }
+    .omelette {
+      width: 100%;
+      border-radius: 0px;
+    }
+  }
+}
